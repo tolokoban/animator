@@ -1,1 +1,10 @@
-{"time":500,"frames":[{"src":"heros-court1.png","y":"49","x":"20"},{"src":"heros-court2.png","y":48,"x":14},{"src":"heros-court3.png","y":48,"x":16},{"src":"heros-court4.png","y":"48","x":"16"},{"src":"heros-court5.png","y":"48","x":"21"},{"src":"heros-court6.png","y":48,"x":23}]}
+{
+  "time": 500,
+  "frames": [
+    {"src":"heros-court1.png","y":50,"x":22},
+    {"src":"heros-court2.png","y":48,"x":15},
+    {"src":"heros-court3.png","y":48,"x":17},
+    {"src":"heros-court4.png","y":50,"x":17},
+    {"src":"heros-court5.png","y":52,"x":24}
+  ]
+}
