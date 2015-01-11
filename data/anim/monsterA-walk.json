@@ -1,0 +1,9 @@
+{
+  "time": 600,
+  "frames": [
+    {"src":"monsterA-walk-1.png","y":48,"x":29},
+    {"src":"monsterA-walk-2.png","y":48,"x":29},
+    {"src":"monsterA-walk-3.png","y":48,"x":34},
+    {"src":"monsterA-walk-4.png","y":48,"x":30}
+  ]
+}

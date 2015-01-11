@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Animator v0.0.1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Animator</h1>
+
+    <center>
+      <button lang="en" onclick="Common.lang('fr')">Je parle français, s'il vous plait !</button>
+      <button lang="fr" onclick="Common.lang('en')">I speak english, please!</button>
+    </center>
+
+    <div lang="en">To do...</div>
+		<div lang="fr">
+			Placez toutes vos images dans le répertoire <code>img</code>.<br/>
+			Si l'une d'elles se nomme <b><code>background.jpg</code></b>, elle sera utilisée comme décor de fond à mettre derrière les animations. Les images relatives aux animations peuvent prendre le nom qu'on veut.<br/>
+			Il faut ensuite créer des fichiers d'animation dont l'extension doit être <b><code>.json</code></b>. En voici un exemple :
+			<pre>
+{
+  "time": 600,
+  "frames": [
+    {"src":"monsterA-walk-1.png","y":48,"x":29},
+    {"src":"monsterA-walk-2.png","y":48,"x":29},
+    {"src":"monsterA-walk-3.png","y":48,"x":34},
+    {"src":"monsterA-walk-4.png","y":48,"x":30}
+  ]
+}
+			</pre>
+			L'attribut <code>time</code> indique la durée totale d'un cycle d'animation, exprimée en millisecondes.<br/>
+			Chaque <i>frame</i> est une image composant l'animation. Les coordonnées <b>x</b> et <b>y</b> sont celles du point d'ancrage de l'image. A l'aide de l'interface, il faut essayer de faire correspondre ce point d'ancrage avec l'intersection des lignes en pointillés.
+		</div>
+
+    <center>
+      <button onclick="location='anim.html'">OK</button>
+    </center>
+  </body>
+</html>
