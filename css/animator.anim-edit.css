@@ -1,0 +1,55 @@
+div.animator-anim-edit {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+div.animator-anim-edit > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 4px;
+}
+div.animator-anim-edit > div.left {
+  width: 128px;
+}
+div.animator-anim-edit > div.left > canvas {
+  border: 1px solid #000;
+}
+div.animator-anim-edit > div.right {
+  overflow-x: auto;
+}
+div.animator-anim-edit > div.right img.vignette {
+  cursor: pointer;
+}
+div.animator-anim-edit > div.right img.vignette.selected {
+  box-shadow: 0 0 3px 1px orange;
+}
+div.animator-anim-edit > div.right img.vignette:hover {
+  background-color: yellow;
+}
+div.animator-anim-edit > div.right > div {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+div.animator-anim-edit > div.right > div > input {
+  margin: 0;
+}
+div.animator-anim-edit div.box {
+  display: inline-table;
+  border-collapse: collapse;
+  margin: 4px;
+}
+div.animator-anim-edit div.box > div {
+  display: table-row;
+}
+div.animator-anim-edit div.box > div > div {
+  display: table-cell;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+div.animator-anim-edit div.box > div > div:hover {
+  background-color: #f80;
+}

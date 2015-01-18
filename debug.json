@@ -1,9 +1,0 @@
-{
-    "name": "Animator",
-    "main": "html/anim.html",
-    "window": {
-	"toolbar": true,
-        "width": 1280,
-        "height": 800
-    }    
-}

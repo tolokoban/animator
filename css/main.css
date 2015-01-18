@@ -1,0 +1,93 @@
+@keyframes keyframes-monster {
+  0% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-1.png);
+  }
+  25% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-2.png);
+  }
+  50% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-3.png);
+  }
+  75% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-4.png);
+  }
+  100% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-1.png);
+  }
+}
+@-webkit-keyframes keyframes-monster {
+  0% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-1.png);
+  }
+  25% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-2.png);
+  }
+  50% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-3.png);
+  }
+  75% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-4.png);
+  }
+  100% {
+    background-image: url(../data/anim/monsterA/monsterA-walk-1.png);
+  }
+}
+.anim-monster {
+  display: block;
+  border: 1px solid #000;
+  width: 96px;
+  height: 96px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  animation-name: keyframes-monster;
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+  -webkit-animation-name: keyframes-monster;
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-end;
+}
+html,
+body {
+  overflow: hidden;
+}
+nav {
+  border-collapse: collapse;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 32px;
+  display: table;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(to bottom, #000000, #444444);
+}
+nav > a {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: yellow;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+nav > a:hover {
+  background-color: rgba(255, 200, 0, 0.3);
+}
+section {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 100%;
+  bottom: 0;
+  z-index: 0;
+  margin: 0;
+  padding: 8px;
+  background: #dde;
+}
+section:target {
+  z-index: 1;
+}
